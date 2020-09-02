@@ -11,6 +11,10 @@ module.exports = async function (context, req) {
 
     context.res = {
         status: 200, 
-        body: projects
+        body: projects,
+        headers: {
+            "Content-Type":"application/json"
+        }
+
     };
 }
